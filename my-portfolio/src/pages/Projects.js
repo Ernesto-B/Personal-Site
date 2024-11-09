@@ -51,6 +51,27 @@ function Projects() {
                         icons={["path/to/icon5.png", "path/to/icon6.png"]}
                         backgroundImage="path/to/background3.jpg"
                     />
+                    <ProjectCard
+                        title="Project 3"
+                        description="A brief description of Project 3."
+                        link="https://github.com/yourusername/project3"
+                        icons={["path/to/icon5.png", "path/to/icon6.png"]}
+                        backgroundImage="path/to/background3.jpg"
+                    />
+                    <ProjectCard
+                        title="Project 3"
+                        description="A brief description of Project 3."
+                        link="https://github.com/yourusername/project3"
+                        icons={["path/to/icon5.png", "path/to/icon6.png"]}
+                        backgroundImage="path/to/background3.jpg"
+                    />
+                    <ProjectCard
+                        title="Project 3"
+                        description="A brief description of Project 3."
+                        link="https://github.com/yourusername/project3"
+                        icons={["path/to/icon5.png", "path/to/icon6.png"]}
+                        backgroundImage="path/to/background3.jpg"
+                    />
                 </div>
             </section>
         </main>

@@ -1,5 +1,6 @@
 /* src/styles/home.css */
 
+/* Define colors and base settings */
 :root {
     --background-color: #050d0e;
     --text-color: #ecf5f7;
@@ -8,6 +9,7 @@
     --accent-color: #43d7ed;
 }
 
+/* Reset body settings */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -79,7 +81,9 @@ body::-webkit-scrollbar {
 }
 
 .highlight {
-    color: var(--primary-color);
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .cta-buttons {
@@ -92,60 +96,57 @@ body::-webkit-scrollbar {
     font-weight: bold;
     border-radius: 5px;
     margin: 0 0.5rem;
-    transition: background-color 0.3s ease;
-}
-
-.primary {
     background-color: var(--primary-color);
     color: var(--background-color);
+    transition: background-color 0.3s ease;
+    display: inline-block;
 }
 
-.secondary {
+.cta.secondary {
     background-color: var(--secondary-color);
     color: var(--text-color);
 }
 
-.primary:hover {
+.cta:hover {
     background-color: var(--accent-color);
     color: var(--background-color);
 }
 
-.secondary:hover {
-    background-color: var(--accent-color);
-    color: var(--background-color);
+.content-section {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
-/* Technologies & Skills Section */
 .skills-section {
     display: flex;
     gap: 2rem;
     padding: 2rem;
-    background-color: var(--background-color);
+    background-color: #1678870f;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 
 .skills-icons-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    grid-template-rows: repeat(3, 1fr); /* 3 rows */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 8px;
     width: 40%;
     max-width: 300px;
-    margin: 0 auto; /* Center horizontally */
+    margin: 0 auto;
     align-items: center;
     justify-items: center;
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Faint border around grid */
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .skills-icons-grid div {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Faint grid lines */
     width: 60px;
-    height: 60px; /* Square cells */
+    height: 60px;
 }
 
 .skills-icons-grid img {
@@ -154,7 +155,6 @@ body::-webkit-scrollbar {
     object-fit: contain;
 }
 
-/* Bullet list styling */
 .skills-list {
     text-align: left;
     padding: 1rem;
@@ -172,7 +172,76 @@ body::-webkit-scrollbar {
     margin: 0.5rem 0;
 }
 
-/* Quick Links Section */
+/* Projects and Recent Blogs Section */
+.projects-section,
+.recent-blogs {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #1678870f;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.recent-blogs {
+    display: flex;
+    overflow-x: auto;
+    gap: 2rem;
+    scroll-snap-type: x mandatory;
+    justify-content: center;
+}
+
+.project-card {
+    min-width: 300px;
+    padding: 1rem;
+    background-color: #1678870f;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    scroll-snap-align: center;
+    text-align: left;
+}
+
+.project-card h3 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+.project-card p {
+    color: var(--primary-color);
+}
+
+.project-card a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+/* Connect With Me Section */
+.quick-links {
+    background-color: #1678870f;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.quick-links h2 {
+    margin-top: 0;
+    padding-top: 1rem; /* Added padding for better spacing */
+}
+
 .quick-links .cta {
     display: inline-block;
     margin: 0.5rem;
@@ -189,7 +258,6 @@ body::-webkit-scrollbar {
     background-color: var(--accent-color);
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
     .skills-section {
         flex-direction: column;
@@ -197,11 +265,21 @@ body::-webkit-scrollbar {
     }
     
     .skills-icons-grid {
-        grid-template-columns: repeat(2, 1fr); /* Adjust for smaller screens */
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .skills-list {
-        width: 100%; /* Full width on small screens */
+        width: 100%;
         text-align: center;
+    }
+
+    .recent-blogs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recent-blogs .project-card {
+        max-width: 100%;
+        margin-bottom: 1rem;
     }
 }
