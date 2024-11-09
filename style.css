@@ -1,0 +1,235 @@
+/* Color Variables */
+:root {
+    --background-color: #050d0e;
+    --text-color: #ecf5f7;
+    --primary-color: #96dbe5;
+    --secondary-color: #167887;
+    --accent-color: #43d7ed;
+}
+
+/* Basic Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-left .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.nav-right a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 1.5rem;
+}
+
+.nav-right a:hover {
+    color: var(--accent-color);
+}
+
+/* Homepage Styling */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 80vh;
+    padding: 2rem;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin: 1rem 0;
+}
+
+.highlight {
+    color: var(--primary-color);
+}
+
+.cta-buttons {
+    margin-top: 2rem;
+}
+
+.cta {
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.primary {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.primary:hover {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
+
+.secondary:hover {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
+
+/* Featured Projects Section */
+.featured-projects {
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.featured-projects h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.featured-project-grid {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.featured-project-card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    border: 2px solid var(--accent-color);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+.featured-project-card:hover {
+    transform: scale(1.05);
+}
+
+.featured-project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.featured-project-card p {
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.featured-project-card a {
+    color: var(--accent-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Project Section Styling */
+.project-section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.project-section h2 {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+/* Project Grid Section */
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.project-card {
+    border: 1px solid #333;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+    background-color: var(--background-color);
+    max-width: 250px;
+    width: 100%;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.tech-icons {
+    margin: 0.5rem 0 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.tech-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.project-card a {
+    color: var(--accent-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-card a:hover {
+    color: var(--secondary-color);
+}
