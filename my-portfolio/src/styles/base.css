@@ -1,0 +1,25 @@
+/* src/styles/base.css */
+:root {
+    --background-color: #050d0e;
+    --text-color: #ecf5f7;
+    --primary-color: #96dbe5;
+    --secondary-color: #167887;
+    --accent-color: #43d7ed;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}

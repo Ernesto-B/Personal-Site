@@ -1,0 +1,31 @@
+/* src/styles/buttons.css */
+
+.cta {
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Ensures it's displayed as a button */
+}
+
+.primary {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.primary:hover {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
+
+.secondary:hover {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}

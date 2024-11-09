@@ -1,0 +1,124 @@
+/* src/styles/projects.css */
+.featured-projects {
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.featured-projects h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.featured-project-grid {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.featured-project-card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    border: 2px solid var(--accent-color);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+.featured-project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.featured-project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.featured-project-card p {
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.featured-project-card a {
+    color: var(--accent-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.project-section h2 {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.project-card {
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--background-color);
+    max-width: 250px;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.project-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.tech-icons {
+    margin: 0.5rem 0 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.tech-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.project-card a {
+    color: var(--accent-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-card a:hover {
+    color: var(--secondary-color);
+}

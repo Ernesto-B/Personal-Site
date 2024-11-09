@@ -1,0 +1,32 @@
+/* src/styles/navbar.css */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-left .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.nav-right a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 1.5rem;
+}
+
+.nav-right a:hover {
+    color: var(--accent-color);
+}

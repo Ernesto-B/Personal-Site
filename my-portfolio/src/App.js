@@ -5,7 +5,9 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Blog from './pages/Blog';
-import './style.css';
+import './styles/base.css';
+
+
 
 function App() {
     return (
