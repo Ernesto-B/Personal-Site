@@ -17,16 +17,36 @@ function Home() {
             </section>
 
             <section className="content-section">
-                <div className="skills-section">
-                    <h2>Technologies & Skills</h2>
-                    <div className="skills-icons">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png" alt="Python" title="Python" />
-                        <img src="path/to/icon2.png" alt="Django" title="Django" />
-                        <img src="path/to/icon3.png" alt="React" title="React" />
+
+                <section className="skills-section">
+                    <div className="skills-icons-grid">
+                        <div><img src="path/to/icon1.png" alt="Tech Icon 1" /></div>
+                        <div><img src="path/to/icon2.png" alt="Tech Icon 2" /></div>
+                        <div><img src="path/to/icon3.png" alt="Tech Icon 3" /></div>
+                        <div><img src="path/to/icon4.png" alt="Tech Icon 4" /></div>
+                        <div><img src="path/to/icon4.png" alt="Tech Icon 4" /></div>
+                        <div><img src="path/to/icon4.png" alt="Tech Icon 4" /></div>
+                        <div><img src="path/to/icon4.png" alt="Tech Icon 4" /></div>
+                        <div><img src="path/to/icon4.png" alt="Tech Icon 4" /></div>
+                        <div><img src="path/to/icon4.png" alt="Tech Icon 4" /></div>
+                        <div><img src="path/to/icon4.png" alt="Tech Icon 4" /></div>
+                        <div><img src="path/to/icon4.png" alt="Tech Icon 4" /></div>
+                        <div><img src="path/to/icon4.png" alt="Tech Icon 4" /></div>
                         {/* Add more icons as needed */}
                     </div>
-                </div>
-                
+                    <div className="skills-list">
+                        <h3>Technologies</h3>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>Python</li>
+                            <li>Django</li>
+                            {/* Add more items as needed */}
+                        </ul>
+                    </div>
+                </section>
+
                 <div className="projects-section">
                     <h2>Recent Projects</h2>
                     <div className="project-card">

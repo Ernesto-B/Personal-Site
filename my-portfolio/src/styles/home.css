@@ -1,4 +1,64 @@
 /* src/styles/home.css */
+
+:root {
+    --background-color: #050d0e;
+    --text-color: #ecf5f7;
+    --primary-color: #96dbe5;
+    --secondary-color: #167887;
+    --accent-color: #43d7ed;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+/* Navbar styling */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-left .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.nav-right a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 1.5rem;
+}
+
+.nav-right a:hover {
+    color: var(--accent-color);
+}
+
+/* Home Page Styling */
 .home {
     padding: 3rem;
     max-width: 1200px;
@@ -26,92 +86,122 @@
     margin-top: 2rem;
 }
 
-.quick-links .cta {
-    padding: 0.6rem 1.2rem; /* Smaller padding for smaller buttons */
-    font-size: 0.9rem; /* Slightly smaller font size */
-    display: inline-block;
-    background-color: var(--primary-color);
-    color: var(--background-color);
-    border-radius: 5px;
+.cta {
+    padding: 0.8rem 1.5rem;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.primary {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.primary:hover {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
+
+.secondary:hover {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
+
+/* Technologies & Skills Section */
+.skills-section {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 2rem;
+}
+
+.skills-icons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(3, 1fr); /* 3 rows */
+    gap: 8px;
+    width: 40%;
+    max-width: 300px;
+    margin: 0 auto; /* Center horizontally */
+    align-items: center;
+    justify-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Faint border around grid */
+}
+
+.skills-icons-grid div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Faint grid lines */
+    width: 60px;
+    height: 60px; /* Square cells */
+}
+
+.skills-icons-grid img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+/* Bullet list styling */
+.skills-list {
+    text-align: left;
+    padding: 1rem;
+    color: var(--text-color);
+    font-size: 1rem;
+    width: 50%;
+}
+
+.skills-list ul {
+    list-style-type: disc;
+    padding-left: 1rem;
+}
+
+.skills-list li {
+    margin: 0.5rem 0;
+}
+
+/* Quick Links Section */
+.quick-links .cta {
+    display: inline-block;
     margin: 0.5rem;
+    padding: 0.7rem 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .quick-links .cta:hover {
     background-color: var(--accent-color);
-    color: var(--background-color);
 }
 
-/* Layout for the content section */
-.content-section {
-    display: flex;
-    justify-content: space-around;
-    margin: 3rem 0;
-    gap: 2rem;
-}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .skills-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .skills-icons-grid {
+        grid-template-columns: repeat(2, 1fr); /* Adjust for smaller screens */
+    }
 
-/* Skills section styling */
-.skills-section, .projects-section {
-    background-color: var(--background-color);
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    flex: 1;
-}
-
-.skills-section h2, .projects-section h2 {
-    color: var(--text-color);
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
-
-.skills-icons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.skills-icons img {
-    width: 40px;
-    height: 40px;
-}
-
-/* Project card styling within recent projects */
-.project-card {
-    background-color: var(--background-color);
-    border: 2px solid var(--accent-color);
-    border-radius: 8px;
-    padding: 1rem;
-    margin-top: 1rem;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-.project-card h3 {
-    color: var(--text-color);
-    margin-bottom: 0.5rem;
-    font-size: 1.4rem;
-}
-
-.project-card p {
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-.project-link {
-    color: var(--accent-color);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.project-link:hover {
-    color: var(--secondary-color);
+    .skills-list {
+        width: 100%; /* Full width on small screens */
+        text-align: center;
+    }
 }
