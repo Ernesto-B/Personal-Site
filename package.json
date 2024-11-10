@@ -1,7 +1,7 @@
 {
   "name": "my-portfolio",
   "version": "0.1.0",
-  "homepage": "https://ernesto-b.github.io/Personal-Site",
+  "homepage": "https://ernesto-b.github.io/Personal-Site/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
