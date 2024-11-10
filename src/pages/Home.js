@@ -33,6 +33,7 @@ function Home() {
                         <div><img src="https://www.svgrepo.com/show/331488/mongodb.svg" alt="MongoDB" /></div>
                         <div><img src="https://cdn4.iconfinder.com/data/icons/redis-2/1451/Untitled-2-512.png" alt="Redis" /></div>
                         <div><img src="https://static-00.iconduck.com/assets.00/postgresql-icon-1987x2048-v2fkmdaw.png" alt="PostgreSQL" /></div>
+                        <div><img src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_200,h_200/https://api.charmhub.io/api/v1/media/download/charm_nwYyQPOuk1TkBzmKxWObtvzygxT4YXWh_icon_737a810ab4f3b82b805cce1190e3495ef08c4bc457f7c8b52ff1c54055638927.png" alt="PostgreSQL" /></div>
                     </div>
                     <div className="skills-list">
                         <h3>Skills</h3>

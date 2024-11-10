@@ -11,3 +11,7 @@ To update the **source** code:
     git commit -m "Your message here"
     git push
 ```
+
+Todo:
+- Add blog section. Blogs should be written in markdown and stored in a separate folder.
+- Clickable project cards that lead to that specific project's page for more info and general notes on it.
