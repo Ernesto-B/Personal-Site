@@ -23,13 +23,15 @@
     flex: 1;
     min-width: 250px;
     max-width: 300px;
-    border: 2px solid var(--accent-color);
+    border: 2px solid var(--accent-color); /* Accent color border for featured cards */
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-color: var(--background-color);
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .featured-project-card:hover {
@@ -74,14 +76,18 @@
 }
 
 .project-card {
-    border-radius: 8px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: var(--background-color);
-    max-width: 250px;
-    width: 100%;
-    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    /* border: 2px solid var(--accent-color); */
     padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #96dbe50f;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .project-card:hover {

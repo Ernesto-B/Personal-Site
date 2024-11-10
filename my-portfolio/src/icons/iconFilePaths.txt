@@ -10,6 +10,9 @@ https://i.pinimg.com/originals/82/a2/18/82a2188c985ce75402ae44fc43fe7e5e.png
 Node:
 https://static-00.iconduck.com/assets.00/node-js-icon-1817x2048-g8tzf91e.png
 
+ExpressJS:
+https://cdn.buttercms.com/pK1f4C6Qsyga3zzcmUxw
+
 C++:
 https://cdn-icons-png.flaticon.com/512/6132/6132222.png
 
@@ -45,3 +48,9 @@ https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/2048p
 
 Elasticsearch:
 https://static-00.iconduck.com/assets.00/elasticsearch-icon-1839x2048-g9zblqim.png
+
+Cassandra:
+https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_200,h_200/https://api.charmhub.io/api/v1/media/download/charm_nwYyQPOuk1TkBzmKxWObtvzygxT4YXWh_icon_737a810ab4f3b82b805cce1190e3495ef08c4bc457f7c8b52ff1c54055638927.png
+
+React:
+https://cdn.hashnode.com/res/hashnode/image/upload/v1647490619965/P1dsNgj-f1.png
