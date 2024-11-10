@@ -130,15 +130,14 @@ body::-webkit-scrollbar {
 
 .skills-icons-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 8px;
+    gap: 6px;
     width: 40%;
-    max-width: 300px;
+    max-width: 400px;
     margin: 0 auto;
     align-items: center;
     justify-items: center;
-    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .skills-icons-grid div {
