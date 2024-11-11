@@ -16,5 +16,14 @@
         "editedDate": "2023-12-01",
         "content": "# Blog Post 2 Content\nThis is the main content of the blog post.",
         "image": "https://example.com/path/to/image2.png"
+    },
+    {
+        "id": "blog-post-2",
+        "title": "Blog Post 2",
+        "description": "A short description or excerpt from Blog Post 2.",
+        "createdDate": "2023-11-28",
+        "editedDate": "2023-12-01",
+        "content": "# Blog Post 2 Content\nThis is the main content of the blog post.",
+        "image": "https://example.com/path/to/image2.png"
     }
 ]

@@ -6,9 +6,10 @@
 }
 
 .blog-card {
+    position: relative; /* Make the container a positioned element */
     display: flex;
     flex-direction: column;
-    background-color: #96dbe50f;
+    background-color: #1c1e22;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     margin-bottom: 1.5rem;
@@ -22,17 +23,34 @@
     transform: scale(1.02);
 }
 
+.blog-image-container {
+    position: relative;
+    width: 100%;
+}
+
 .blog-image {
     width: 100%;
     height: 150px;
     object-fit: cover;
+    display: block;
+}
+
+.blog-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Control the dimming level here */
+    pointer-events: none; /* Allow clicks to pass through the overlay */
 }
 
 .blog-content {
-    display: flex;
     padding: 1rem;
+    display: flex;
     gap: 1rem;
 }
+
 
 .blog-left,
 .blog-right {
