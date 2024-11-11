@@ -8,8 +8,6 @@ import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import './styles/base.css';
 
-
-
 function App() {
     return (
         <Router>
@@ -18,7 +16,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/blog" element={<Blog />} />
-                <Route path="/blog/:id" element={<BlogPost />} />
+                <Route path="/blog/:id" element={<BlogPost />} /> {/* Match ID */}
             </Routes>
         </Router>
     );

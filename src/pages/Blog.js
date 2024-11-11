@@ -1,12 +1,25 @@
-import React, { useState } from 'react';
+// Blog.js (without direct import)
+import React, { useState, useEffect } from 'react';
 import BlogCard from '../components/BlogCard';
 import '../styles/blog.css';
-import blogPosts from '../blogPosts/blogPost.json'; // Direct import of the JSON data
+// import '../blogPosts/blogPosts.json';
 
 function Blog() {
     const [search, setSearch] = useState("");
+    const [blogPosts, setBlogPosts] = useState([]);
 
-    // Filter posts based on the search query
+    useEffect(() => {
+        fetch(`${process.env.PUBLIC_URL}/blogPosts/blogPosts.json`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => setBlogPosts(data))
+            .catch(error => console.error("Error loading blog posts:", error));
+    }, []);
+
     const filteredPosts = blogPosts.filter(post =>
         post.title.toLowerCase().includes(search.toLowerCase()) ||
         post.description.toLowerCase().includes(search.toLowerCase())
