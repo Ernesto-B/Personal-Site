@@ -1,31 +1,61 @@
-/* Center the blog post content */
+/* src/styles/blogPost.css */
+:root {
+    --background-color: #050d0e;
+    --text-color: #ecf5f7;
+    --primary-color: #96dbe5;
+    --secondary-color: #167887;
+    --accent-color: #43d7ed;
+}
+
+
+/* src/styles/blogPost.css */
+
 .blog-post-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 .blog-post-content {
-    max-width: 700px;
-    width: 100%;
-    text-align: left;
+    background-color: #1f1f1f;
+    padding: 1.5rem;
+    border-radius: 8px;
 }
 
-/* Style the back button */
+.blog-post-content h1 {
+    margin-bottom: 0.5rem;
+}
+
+.blog-post-date {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 1.5rem;
+}
+
 .back-button {
-    align-self: flex-start;
-    background-color: #333;
+    position: sticky;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #36b0e8;
     color: #fff;
     border: none;
-    padding: 10px 15px;
-    margin-bottom: 20px;
+    border-radius: 4px;
     cursor: pointer;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 14px;
+    transition: background-color 0.3s;
+    float: right;
+    margin-top: 2rem;
 }
 
 .back-button:hover {
-    background-color: #555;
+    background-color: #2a8dbd;
+}
+
+code, pre {
+    background-color: #282c34 !important; /* Darker background like the example */
+    color: #abb2bf; /* Softer text color */
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-family: 'Courier New', Courier, monospace;
 }

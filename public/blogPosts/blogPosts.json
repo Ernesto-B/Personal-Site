@@ -5,7 +5,7 @@
         "description": "A short description or excerpt from Blog Post 1.",
         "createdDate": "2023-12-01",
         "editedDate": "2023-12-02",
-        "content": "# Blog Post 1 Content\nThis is the main content of the blog post, written in markdown.",
+        "content": "This is the main content of the blog post, written in markdown.\n```bash\ntestcode and something else here\nsomething more than the other\n```\n```python\nprint('something here')",
         "image": "https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABeNzg-kMHhUBP4AmHnLsrPYzxKHVceLnkwtLhxZlDssj7KjhStloJR6px7EbquZ83uDcygnWkekxysvuNYVzLQ3GyBMRl2PpU7pO.jpg?r=db8"
     },
     {
@@ -15,7 +15,7 @@
         "createdDate": "2023-11-28",
         "editedDate": "2023-12-01",
         "content": "# Blog Post 2 Content\nThis is the main content of the blog post.",
-        "image": "https://example.com/path/to/image2.png"
+        "image": "https://m.media-amazon.com/images/I/61bHYHjzJDL._AC_UF1000,1000_QL80_.jpg"
     },
     {
         "id": "blog-post-2",
@@ -24,6 +24,6 @@
         "createdDate": "2023-11-28",
         "editedDate": "2023-12-01",
         "content": "# Blog Post 2 Content\nThis is the main content of the blog post.",
-        "image": "https://example.com/path/to/image2.png"
+        "image": "https://cdn.thisiswhyimbroke.com/images/pooping-patrick-star-toothpaste-topper-beccasbuild-300x250.jpg"
     }
 ]
