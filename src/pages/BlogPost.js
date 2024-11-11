@@ -1,48 +1,52 @@
-// src/pages/BlogPost.js
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import ReactMarkdown from 'react-markdown';
+import React, { useState, useEffect } from 'react';
+import BlogCard from '../components/BlogCard';
 import '../styles/blog.css';
 
-// Sample blog data (same as in Blog.js)
-const blogData = [
-    {
-        id: 1,
-        title: "Blog Post 1",
-        description: "A short description or excerpt from Blog Post 1.",
-        dateCreated: "2023-12-01",
-        dateEdited: "2023-12-02",
-        image: "path/to/image1.jpg",
-        markdownContent: "# Blog Post 1\n\nThis is the content of Blog Post 1."
-    },
-    {
-        id: 2,
-        title: "Blog Post 2",
-        description: "A short description or excerpt from Blog Post 2.",
-        dateCreated: "2023-11-28",
-        dateEdited: "2023-12-01",
-        image: "path/to/image2.jpg",
-        markdownContent: "# Blog Post 2\n\nThis is the content of Blog Post 2."
-    }
-];
+function Blog() {
+    const [search, setSearch] = useState("");
+    const [blogPosts, setBlogPosts] = useState([]);
 
-function BlogPost() {
-    const { id } = useParams();
-    const blog = blogData.find(b => b.id.toString() === id);
+    useEffect(() => {
+        // Fetch the blog posts from the public folder
+        fetch('/blogPosts/blogPosts.json')
+            .then(response => response.json())
+            .then(data => setBlogPosts(data))
+            .catch(error => console.error("Error loading blog posts:", error));
+    }, []);
 
-    if (!blog) {
-        return <p>Blog post not found.</p>;
-    }
+    const filteredPosts = blogPosts.filter(post =>
+        post.title.toLowerCase().includes(search.toLowerCase()) ||
+        post.description.toLowerCase().includes(search.toLowerCase())
+    );
 
     return (
-        <main className="blog-post">
-            <h1>{blog.title}</h1>
-            <p><strong>Created:</strong> {blog.dateCreated}</p>
-            <p><strong>Edited:</strong> {blog.dateEdited}</p>
-            <img src={blog.image} alt={blog.title} className="blog-post-image" />
-            <ReactMarkdown>{blog.markdownContent}</ReactMarkdown>
+        <main className="blog-page">
+            <div className="blog-posts">
+                <h2>Blog Posts</h2>
+                {filteredPosts.map(post => (
+                    <BlogCard key={post.id} post={post} />
+                ))}
+            </div>
+            <aside className="blog-sidebar">
+                <input
+                    type="text"
+                    placeholder="Search blogs..."
+                    value={search}
+                    onChange={e => setSearch(e.target.value)}
+                />
+                <div className="popular-blogs">
+                    <h3>Popular Blogs</h3>
+                    <ul>
+                        {blogPosts.map(post => (
+                            <li key={post.id}>
+                                <a href={`#${post.id}`}>{post.title}</a>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </aside>
         </main>
     );
 }
 
-export default BlogPost;
+export default Blog;

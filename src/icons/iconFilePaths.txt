@@ -54,3 +54,7 @@ https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fil
 
 React:
 https://cdn.hashnode.com/res/hashnode/image/upload/v1647490619965/P1dsNgj-f1.png
+
+
+above private:
+  "homepage": "https://ernesto-b.github.io/Personal-Site/",
