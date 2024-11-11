@@ -1,8 +1,7 @@
-// Blog.js (without direct import)
+// src/pages/Blog.js
 import React, { useState, useEffect } from 'react';
 import BlogCard from '../components/BlogCard';
 import '../styles/blog.css';
-// import '../blogPosts/blogPosts.json';
 
 function Blog() {
     const [search, setSearch] = useState("");

@@ -1,0 +1,31 @@
+/* Center the blog post content */
+.blog-post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.blog-post-content {
+    max-width: 700px;
+    width: 100%;
+    text-align: left;
+}
+
+/* Style the back button */
+.back-button {
+    align-self: flex-start;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-button:hover {
+    background-color: #555;
+}
