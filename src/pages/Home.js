@@ -52,7 +52,7 @@ function Home() {
 
             <h2>Connect With Me</h2>
             <section className="quick-links">
-                <a href="path/to/resume.pdf" target="_blank" rel="noopener noreferrer" className="cta small">Download Resume (!)</a>
+                <a href="/Resume2025.pdf" download="Ernesto Barreto - Resume 2025.pdf" target="_blank" rel="noopener noreferrer" className="cta small">Download Resume</a>
                 <a href="https://www.linkedin.com/in/ernesto-barreto-58a9b0258/" target="_blank" rel="noopener noreferrer" className="cta small">LinkedIn</a>
                 <a href="https://github.com/Ernesto-B?tab=repositories&q=demo&type=&language=&sort=" target="_blank" rel="noopener noreferrer" className="cta small">GitHub</a>
             </section>

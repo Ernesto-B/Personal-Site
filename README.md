@@ -11,6 +11,7 @@ To update the **source** code:
     git commit -m "Your message here"
     git push
 ```
+To update the resume, replace the `Resume<year>.pdf` file in the `public` folder with the new one.
 
 Todo:
 - Add blog section. Blogs should be written in markdown and stored in a separate folder.
