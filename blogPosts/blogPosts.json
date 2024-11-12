@@ -5,7 +5,7 @@
         "description": "A short description or excerpt from Blog Post 1.",
         "createdDate": "2023-12-01",
         "editedDate": "2023-12-02",
-        "content": "This is the main content of the blog post, written in markdown.\n```bash\ntestcode and something else here\nsomething more than the other\n```\n```python\nprint('something here')\n//this is a comment\n```\nthere is something more to say here `port 3000` since it wont be doing more than the other\n- list one\n- list 2\n    - indented list\n### subtitle here\n[go back to the home page here](link.com)",
+        "content": "This is the main content of the blog post, written in markdown.\n```bash\ntestcode and something else here\nsomething more than the other\n```\n```python\nprint('something here')\n//this is a comment\n```\nthere is something more to say here `port 3000` since it wont be doing more than the other\n- list one\n- list 2\n    - indented list\n### subtitle here\n[Go back to the home page here](https://ernesto-b.github.io/Personal-Site/#/)\n\nanother thing",
         "image": "https://www.openmindt.com/wp-content/uploads/2023/11/how-to-choose-your-programming-language-for-your-software.jpg"
     }
 ]
