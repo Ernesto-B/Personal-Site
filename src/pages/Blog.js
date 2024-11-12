@@ -1,4 +1,5 @@
 // src/pages/Blog.js
+
 import React, { useState, useEffect } from 'react';
 import BlogCard from '../components/BlogCard';
 import '../styles/blog.css';
@@ -40,11 +41,11 @@ function Blog() {
                     onChange={e => setSearch(e.target.value)}
                 />
                 <div className="popular-blogs">
-                    <h3>Popular Blogs</h3>
+                    <h3>Top Blogs</h3>
                     <ul>
                         {blogPosts.map(post => (
                             <li key={post.id}>
-                                <a href={`#${post.id}`}>{post.title}</a>
+                                <a href={`#/blog/${post.id}`}>{post.title}</a> {/* Update this line */}
                             </li>
                         ))}
                     </ul>

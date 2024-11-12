@@ -31,7 +31,7 @@
     padding: 2px 4px; /* Adjusts padding around inline code */
     border-radius: 4px;
     background-color: #444; /* Adjusts the background to stand out */
-    color: #e0e0e0; /* Ensures text color is visible */
+    color: orange; /* Ensures text color is visible */
 }
 
 /* Link styling */
