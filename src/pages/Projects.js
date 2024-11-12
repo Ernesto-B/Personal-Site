@@ -38,7 +38,7 @@ function Projects() {
                 <div className="project-grid">
                     <ProjectCard
                         title="Project Dependency Visualizer"
-                        description="Tool to visualize dependencies of files in a folder. "
+                        description="Tool to visualize dependencies of files in a given folder"
                         link="https://github.com/Ernesto-B/Dependency-Visualizer"
                         icons={["https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png"]}
                         backgroundImage="path/to/featured-background2.jpg"

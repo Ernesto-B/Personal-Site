@@ -9,7 +9,7 @@ function Home() {
         <main className="home">
             <section className="intro">
                 <h1>My <span className="highlight">Projects</span> & <span className="highlight">Skills</span></h1>
-                <p>Discover the work I’ve done and the skills I bring to the table. Click on a project in the projects page to dive into its details, or explore my thoughts and learnings through my blogs.</p>
+                <p>Discover the work I’ve done and the skills I bring to the table. Click "View on GitHub" on a project to dive into its details, or explore my thoughts and learnings through my blogs.</p>
                 <div className="cta-buttons">
                     <Link to="/projects" className="cta primary">View Projects</Link>
                     <Link to="/blog" className="cta secondary">Read Blog</Link>
@@ -39,10 +39,10 @@ function Home() {
                         <h3>Skills</h3>
                         <ul>
                             <li>Backend software development</li>
-                            <li>Unit/integration Testing</li>
+                            <li>Unit/integration testing</li>
                             <li>CI/CD pipelining</li>
-                            <li>Networked Systems</li>
-                            <li>System Design and Architecture</li>
+                            <li>Networked systems</li>
+                            <li>System design and architecture</li>
 
                         </ul>
                     </div>
