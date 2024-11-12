@@ -37,6 +37,14 @@ function Projects() {
                 <h2>All Projects</h2>
                 <div className="project-grid">
                     <ProjectCard
+                        title="Project Dependency Visualizer"
+                        description="Tool to visualize dependencies of files in a folder. "
+                        link="https://github.com/Ernesto-B/Dependency-Visualizer"
+                        icons={["https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png"]}
+                        backgroundImage="path/to/featured-background2.jpg"
+                        isFeatured={false}
+                    />
+                    <ProjectCard
                         title="Elasticsearch Product Catalogue"
                         description="Indexing, searching, and filtering data"
                         link="https://github.com/Ernesto-B/Elasticsearch-Product-Catalog-Demo"

@@ -16,6 +16,34 @@
     padding: 2rem;
 }
 
+/* Code block styling */
+.blog-post-content pre {
+    margin: 8px 0; /* Reduces the space above and below the code blocks */
+    padding: 10px; /* Adjusts padding within the code block */
+    border-radius: 6px;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+/* Inline code styling */
+.blog-post-content code {
+    font-size: 0.9em; /* Reduces font size for inline code */
+    padding: 2px 4px; /* Adjusts padding around inline code */
+    border-radius: 4px;
+    background-color: #444; /* Adjusts the background to stand out */
+    color: #e0e0e0; /* Ensures text color is visible */
+}
+
+/* Link styling */
+.blog-post-content a {
+    color: #4ea8ff; /* Sets a lighter shade of blue for links */
+    text-decoration: underline;
+}
+
+.blog-post-content a:hover {
+    color: #81caff; /* Changes link color on hover for better UX */
+}
+
 .blog-post-content {
     background-color: #1f1f1f;
     padding: 1.5rem;
