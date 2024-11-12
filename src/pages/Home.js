@@ -48,24 +48,6 @@ function Home() {
                     </div>
                 </section>
 
-                <h2 className="recent-blogs-title">Recent Blogs (!)</h2>
-                <div className="recent-blogs">
-                    <div className="project-card">
-                        <h3>Project 1</h3>
-                        <p>A brief description of Project 1.</p>
-                        <Link to="/projects#project1" className="project-link">Learn More</Link>
-                    </div>
-                    <div className="project-card">
-                        <h3>Project 2</h3>
-                        <p>A brief description of Project 2.</p>
-                        <Link to="/projects#project2" className="project-link">Learn More</Link>
-                    </div>
-                    <div className="project-card">
-                        <h3>Project 2</h3>
-                        <p>A brief description of Project 2.</p>
-                        <Link to="/projects#project2" className="project-link">Learn More</Link>
-                    </div>
-                </div>
             </section>
 
             <h2>Connect With Me</h2>
